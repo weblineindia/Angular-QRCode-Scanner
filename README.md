@@ -1,0 +1,1 @@
+# AngularJS-QRCode-Scanner
