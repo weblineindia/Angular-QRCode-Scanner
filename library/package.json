@@ -1,0 +1,146 @@
+{
+  "_from": "@zxing/library@^0.15.1",
+  "_id": "@zxing/library@0.15.2",
+  "_inBundle": false,
+  "_integrity": "sha512-J+N88Eyg6eI2SKIk2YIkjjNICbMSqmLZnB3oD1S21Bi3k+Ddg2eKe/nW+Hce4NKAFAZtY1mdDM08Bj9eu87HSg==",
+  "_location": "/@zxing/library",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@zxing/library@^0.15.1",
+    "name": "@zxing/library",
+    "escapedName": "@zxing%2flibrary",
+    "scope": "@zxing",
+    "rawSpec": "^0.15.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.15.1"
+  },
+  "_requiredBy": [
+    "/@zxing/ngx-scanner"
+  ],
+  "_resolved": "https://registry.npmjs.org/@zxing/library/-/library-0.15.2.tgz",
+  "_shasum": "3026071aca80a84af09706dffa1d386053e11efc",
+  "_spec": "@zxing/library@^0.15.1",
+  "_where": "/media/javauser/914fa200-2352-479a-be3f-039edc4d1f6a/home/javauser/angular projects/my-new-app/node_modules/@zxing/ngx-scanner",
+  "authors": [
+    {
+      "name": "Adrian Toșcă"
+    },
+    {
+      "name": "David Werth",
+      "email": "werth.david@gmail.com"
+    },
+    {
+      "name": "Luiz Barni",
+      "email": "machado@odahcam.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/zxing-js/library/issues/new"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "text-encoding": "^0.7.0",
+    "ts-custom-error": "^3.0.0"
+  },
+  "deprecated": false,
+  "description": "TypeScript port of ZXing multi-format 1D/2D barcode image processing library.",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.29",
+    "@types/seedrandom": "^2.4.27",
+    "@types/sharp": "^0.22.2",
+    "@types/text-encoding": "0.0.35",
+    "awesome-typescript-loader": "^5.2.1",
+    "chai": "^4.2.0",
+    "codacy-coverage": "^3.4.0",
+    "eslint": "^5.15.1",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "karma": "^3.1.4",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-mocha": "^1.3.0",
+    "karma-remap-coverage": "^0.1.5",
+    "karma-sinon": "^1.0.5",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-typescript": "^3.0.13",
+    "karma-typescript-preprocessor": "^0.4.0",
+    "karma-webpack": "^3.0.5",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "nyc": "^13.3.0",
+    "seedrandom": "^2.4.4",
+    "sharp": "^0.22.1",
+    "shx": "0.3.2",
+    "sinon": "^7.2.7",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.13.1",
+    "typescript": "~3.3.3333",
+    "uglify-js": "^3.4.9",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-config-utils": "2.3.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "esnext": "./esm/index.js",
+  "homepage": "https://zxing-js.github.io/library/",
+  "keywords": [
+    "reader",
+    "writer",
+    "decode",
+    "encode",
+    "scanner",
+    "generator",
+    "barcode",
+    "qr-code",
+    "barcode 1d",
+    "barcode 2d",
+    "typescript",
+    "zxing"
+  ],
+  "license": "MIT",
+  "main": "./umd/index.min.js",
+  "module": "./esm5/index.js",
+  "name": "angular-weblineindia-qrcode-scanner/library",
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "optionalDependencies": {
+    "text-encoding": "^0.7.0"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxing-js/library.git"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:es5 && yarn build:es6 && yarn build:umd",
+    "build:es5": "yarn tsc",
+    "build:es6": "yarn tsc --target es6 --outdir esm --module esnext",
+    "build:umd": "yarn webpack --mode production",
+    "clean": "yarn shx rm -rf umd esm esm5",
+    "cover": "yarn nyc --reporter=lcov --reporter=text yarn test",
+    "lint": "yarn tslint src/**/*.ts",
+    "mocha-webpack": "mocha-webpack",
+    "nyc": "nyc",
+    "shx": "shx",
+    "test": "yarn mocha-webpack \"./src/**/*.spec.ts\" --timeout 200000 --webpack-config webpack.config.test.js",
+    "tsc": "tsc",
+    "tslint": "tslint",
+    "webpack": "webpack-cli"
+  },
+  "typings": "./esm/index.d.ts",
+  "version": "0.0.1"
+}

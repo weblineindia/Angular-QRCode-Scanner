@@ -1,0 +1,69 @@
+{
+  "_from": "@zxing/ngx-scanner",
+  "_id": "@zxing/ngx-scanner@3.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-WK3VwklpGp2zBhZdBIUETO9igk5fOOvLUZpTjk2LDsqAxAhdNYbtOQVYJGSwSsF3evP8sKPxmyNlW3FF9vr7yQ==",
+  "_location": "/@zxing/ngx-scanner",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@zxing/ngx-scanner",
+    "name": "@zxing/ngx-scanner",
+    "escapedName": "@zxing%2fngx-scanner",
+    "scope": "@zxing",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@zxing/ngx-scanner/-/ngx-scanner-3.0.0.tgz",
+  "_shasum": "fa510fb9afb42310809ed349abc84ba1dbb6809e",
+  "_spec": "@zxing/ngx-scanner",
+  "_where": "/media/javauser/914fa200-2352-479a-be3f-039edc4d1f6a/home/javauser/angular projects/my-new-app",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@zxing/library": "^0.15.1",
+    "tslib": "^1.9.0"
+  },
+  "deprecated": false,
+  "description": "An AngularJS based Barcode / QRCode scanner component.",
+  "es2015": "fesm2015/zxing-ngx-scanner.js",
+  "esm2015": "esm2015/zxing-ngx-scanner.js",
+  "esm5": "esm5/zxing-ngx-scanner.js",
+  "fesm2015": "fesm2015/zxing-ngx-scanner.js",
+  "fesm5": "fesm5/zxing-ngx-scanner.js",
+  "main": "bundles/zxing-ngx-scanner.umd.js",
+  "metadata": "zxing-ngx-scanner.metadata.json",
+  "module": "fesm5/zxing-ngx-scanner.js",
+  "name": "angular-weblineindia-qrcode-scanner",
+  "author": {
+    "name": "Weblineindia"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^9.0.0 <10",
+    "@angular/core": "^9.0.0 <10",
+    "rxjs": "^6.5.4"
+  },
+  "private": false,
+  "sideEffects": false,
+  "typings": "zxing-ngx-scanner.d.ts",
+  "version": "1.0.0",
+  "homepage": "https://www.weblineindia.com/software-development-resources.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weblineindia/AngularJS-QRCode-Scanner"
+  },
+  "keywords": [
+    "angular-qrcode-scanner",
+    "angularjs-barcode-scanner",
+    "barcode-scanner",
+    "qrcode-scanner",
+    "angularjs-qrcode",
+    "qrcode"
+  ]
+}
